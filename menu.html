@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu | Maison Élan | Elegant European Patisserie & Cafe | Hyderabad</title>
+  <meta name="description" content="Explore our catalog of artisan patisserie, European savory dishes, and signature brews handcrafted at Maison Élan in Hyderabad.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23C5A880%22 font-family=%22serif%22>M</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Luxury Splash Screen Loader -->
+  <div id="luxuryLoader" class="luxury-loader">
+    <div class="loader-content">
+      <span class="loader-monogram">MÉ</span>
+      <h1 class="loader-logo font-serif">Maison Élan</h1>
+      <div class="loader-ornament">
+        <div class="loader-ornament-lines">
+          <div class="loader-ornament-line long"></div>
+          <div class="loader-ornament-diamond"></div>
+          <div class="loader-ornament-line long"></div>
+        </div>
+        <div class="loader-line-wrapper">
+          <div class="loader-line"></div>
+        </div>
+      </div>
+      <p class="loader-tagline">An Elegant European Dining Experience</p>
+    </div>
+  </div>
+
+  <!-- Custom Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-container">
+      <!-- Monogram Logo -->
+      <a href="index.html" class="logo-container" aria-label="Maison Élan Home">
+        <span class="logo-monogram">MÉ</span>
+        <span class="logo-full">Maison Élan</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="story.html" class="nav-link">Our Story</a></li>
+          <li><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Reservation Action -->
+      <div class="header-actions">
+        <a href="https://wa.me/919441424667?text=Hello%20Maison%20%C3%89lan%2C%20I%20would%20like%20to%20reserve%20a%20table.%20Please%20share%20the%20available%20timings." target="_blank" rel="noopener noreferrer" class="btn btn-nav-reserve">Book Table</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="burger-line line-1"></span>
+          <span class="burger-line line-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-container">
+      <nav class="nav-mobile" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="story.html" class="mobile-nav-link">Our Story</a></li>
+          <li><a href="menu.html" class="mobile-nav-link active">Menu</a></li>
+          <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav-footer">
+        <p class="mobile-hours">Daily 11:00 AM – 11:00 PM</p>
+        <p class="mobile-address">Road No. 45, Jubilee Hills, Hyderabad</p>
+        <a href="https://wa.me/919441424667?text=Hello%20Maison%20%C3%89lan%2C%20I%20would%20like%20to%20reserve%20a%20table.%20Please%20share%20the%20available%20timings." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-mobile-reserve">Book Table</a>
+      </div>
+    </div>
+  </div>
+
+  <main style="padding-top: 90px;">
+    <!-- Cinematic Header Hero Section for Menu -->
+    <section class="menu-banner-premium">
+      <!-- Rotating Slideshow Backgrounds -->
+      <div class="menu-slideshow-container">
+        <div class="menu-slide-bg active" style="background-image: url('assets/story_bg.jpg');"></div>
+        <div class="menu-slide-bg" style="background-image: url('assets/experience_patisserie.jpg');"></div>
+        <div class="menu-slide-bg" style="background-image: url('assets/experience_savory.jpg');"></div>
+      </div>
+      <div class="menu-banner-overlay"></div>
+      <div class="container menu-banner-content scroll-reveal" data-reveal="fade-up">
+        <span class="menu-banner-subtitle">CULINARY EXHIBITION</span>
+        <h1 class="menu-banner-title font-serif">Explore Our Menu</h1>
+        <p class="menu-banner-desc">Handcrafted creations inspired by European culinary traditions, prepared with meticulous craft.</p>
+        <div class="editorial-divider center"></div>
+      </div>
+    </section>
+
+    <!-- Luxury Interactive Catalog Explorer -->
+    <section class="menu-catalog-section section-padding bg-cream">
+      
+      <!-- Premium Search Component -->
+      <div class="container menu-search-wrapper scroll-reveal" data-reveal="fade-up">
+        <div class="menu-search-box">
+          <svg class="menu-search-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" class="menu-search-input" id="menuSearchInput" placeholder="Search our culinary collection (e.g. Croissant, Hot Chocolate, Pasta...)" aria-label="Search dishes">
+        </div>
+      </div>
+
+      <!-- Scrolling Category Tabs (Pills with arrows) -->
+      <div class="container menu-category-nav-wrapper scroll-reveal" data-reveal="fade-up" data-delay="100">
+        <button class="category-arrow-btn arrow-left" id="btnSlideLeft" aria-label="Scroll Categories Left">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        
+        <div class="menu-category-tabs-track" id="categoryTabsTrack" role="tablist">
+          <button class="menu-tab-btn active" role="tab" aria-selected="true" data-category="all">All Offerings</button>
+          <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="pastries">Signature Pastries</button>
+          <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="desserts">Desserts</button>
+          <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="beverages">Beverages</button>
+          <button class="menu-tab-btn" role="tab" aria-selected="false" data-category="savory">Savory Collection</button>
+        </div>
+
+        <button class="category-arrow-btn arrow-right" id="btnSlideRight" aria-label="Scroll Categories Right">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Dynamic Cinematic Category Banner -->
+      <div class="container" style="margin-bottom: 50px;">
+        <div class="menu-category-hero-banner scroll-reveal" data-reveal="fade-up" data-delay="150" id="categoryHeroBanner">
+          <div class="category-hero-bg" id="categoryHeroBg" style="background-image: url('assets/experience_patisserie.jpg');"></div>
+          <div class="category-hero-overlay"></div>
+          <div class="category-hero-content">
+            <span class="category-hero-subtitle" id="categoryHeroSubtitle">Maison Élan Classics</span>
+            <h2 class="category-hero-title font-serif" id="categoryHeroTitle">Signature Pastries & Viennoiserie</h2>
+            <p class="category-hero-desc" id="categoryHeroDesc">Flaky laminated doughs, twice-baked golden bakes, and delicate cream fillings prepared daily at dawn by our pastry chefs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium Menu Grid Layout -->
+      <div class="container menu-grid-premium" id="menuGridPremium">
+        
+        <!-- PASTRIES -->
+        <!-- Almond Croissant -->
+        <div class="menu-card-premium scroll-reveal" data-category="pastries" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/story_bg.jpg" alt="Almond Croissant">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-eggless">Eggless Available</span>
+                <span class="badge-signature">Signature</span>
+              </div>
+              <span class="menu-card-price">₹320</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Almond Croissant</h3>
+            <p class="menu-card-desc">Twice-baked flaky butter croissant filled with rich almond frangipane, topped with toasted sliced almonds and vanilla glaze.</p>
+          </div>
+        </div>
+
+        <!-- Chocolate Croissant -->
+        <div class="menu-card-premium scroll-reveal" data-category="pastries" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_patisserie.jpg" alt="Chocolate Croissant">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-eggless">Eggless Available</span>
+                <span class="badge-standard">House Specialty</span>
+              </div>
+              <span class="menu-card-price">₹340</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Chocolate Croissant</h3>
+            <p class="menu-card-desc">Flaky laminated butter pastry rolled around premium 70% dark Belgian chocolate batons, baked to a deep golden crisp.</p>
+          </div>
+        </div>
+
+        <!-- Pistachio Tart -->
+        <div class="menu-card-premium scroll-reveal" data-category="pastries" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_patisserie.jpg" alt="Pistachio Rose Tart">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-eggless">Eggless</span>
+                <span class="badge-recommend">Chef Recommended</span>
+              </div>
+              <span class="menu-card-price">₹450</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Pistachio Rose Tart</h3>
+            <p class="menu-card-desc">Delicate crisp pastry base lined with sweet pistachio ganache, layered with organic rosewater cream, finished with premium crushed pistachios.</p>
+          </div>
+        </div>
+
+        <!-- French Éclair -->
+        <div class="menu-card-premium scroll-reveal" data-category="pastries" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_patisserie.jpg" alt="French Éclair">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-standard">French Craft</span>
+              </div>
+              <span class="menu-card-price">₹360</span>
+            </div>
+            <h3 class="menu-card-title font-serif">French Éclair</h3>
+            <p class="menu-card-desc">Classic crisp choux pastry pipe filled with velvety Madagascar vanilla bean pastry cream, finished with a glossy dark chocolate mirror glaze.</p>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <!-- Belgian Chocolate Cake -->
+        <div class="menu-card-premium scroll-reveal" data-category="desserts" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_patisserie.jpg" alt="Belgian Chocolate Cake">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-eggless">Eggless Available</span>
+                <span class="badge-signature">Signature</span>
+              </div>
+              <span class="menu-card-price">₹520</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Belgian Chocolate Cake</h3>
+            <p class="menu-card-desc">Decadent multi-layered sponge cake frosted with premium 64% Callebaut chocolate fudge ganache and cocoa dust flakes.</p>
+          </div>
+        </div>
+
+        <!-- Classic Tiramisu -->
+        <div class="menu-card-premium scroll-reveal" data-category="desserts" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_beverages.jpg" alt="Classic Tiramisu">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-standard">Contains Coffee</span>
+                <span class="badge-recommend">Chef Selection</span>
+              </div>
+              <span class="menu-card-price">₹480</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Classic Tiramisu</h3>
+            <p class="menu-card-desc">Italian ladyfingers soaked in single-origin espresso and dark rum, layered with whipped mascarpone cream and premium cocoa powder.</p>
+          </div>
+        </div>
+
+        <!-- Vanilla Cheesecake -->
+        <div class="menu-card-premium scroll-reveal" data-category="desserts" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_patisserie.jpg" alt="Vanilla Cheesecake">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-eggless">Eggless</span>
+              </div>
+              <span class="menu-card-price">₹490</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Vanilla Cheesecake</h3>
+            <p class="menu-card-desc">New York style slow-baked cheesecake on a buttered graham cracker crust, topped with fresh raspberry compote and mint sprig.</p>
+          </div>
+        </div>
+
+        <!-- Signature Dessert Collection -->
+        <div class="menu-card-premium scroll-reveal" data-category="desserts" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_patisserie.jpg" alt="Signature Dessert Collection">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-signature">Premium Platter</span>
+              </div>
+              <span class="menu-card-price">₹950</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Signature Dessert Collection</h3>
+            <p class="menu-card-desc">An elegant tasting platter featuring mini versions of our tarts, mousses, and artisan macarons, perfect for pairing with coffee.</p>
+          </div>
+        </div>
+
+        <!-- BEVERAGES -->
+        <!-- Signature Hot Chocolate -->
+        <div class="menu-card-premium scroll-reveal" data-category="beverages" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_beverages.jpg" alt="Signature Hot Chocolate">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-signature">House Blend</span>
+              </div>
+              <span class="menu-card-price">₹360</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Signature Hot Chocolate</h3>
+            <p class="menu-card-desc">Pure melted 70% dark Belgian chocolate mixed with fresh organic milk, served with a house-made gourmet marshmallow.</p>
+          </div>
+        </div>
+
+        <!-- Artisan Coffee -->
+        <div class="menu-card-premium scroll-reveal" data-category="beverages" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_beverages.jpg" alt="Artisan Coffee">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-standard">Single Origin</span>
+              </div>
+              <span class="menu-card-price">₹260</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Artisan Coffee</h3>
+            <p class="menu-card-desc">Hand-poured filter coffee using single-origin Arabica beans, roasted locally in Jubilee Hills, highlighting floral and chocolate notes.</p>
+          </div>
+        </div>
+
+        <!-- Cappuccino -->
+        <div class="menu-card-premium scroll-reveal" data-category="beverages" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_beverages.jpg" alt="Cappuccino">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-standard">Fresh Espresso</span>
+              </div>
+              <span class="menu-card-price">₹240</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Cappuccino</h3>
+            <p class="menu-card-desc">Double shot of house blend espresso topped with a smooth, velvety layer of aerated steamed milk and micro-foam art.</p>
+          </div>
+        </div>
+
+        <!-- Premium Mocktails -->
+        <div class="menu-card-premium scroll-reveal" data-category="beverages" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_beverages.jpg" alt="Premium Mocktails">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-recommend">Bartender Selection</span>
+              </div>
+              <span class="menu-card-price">₹320</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Premium Mocktails</h3>
+            <p class="menu-card-desc">A refreshing cold-pressed mocktail blending fresh pomegranate juice, mint sprigs, lime, and organic lavender syrup, topped with fizz.</p>
+          </div>
+        </div>
+
+        <!-- SAVORY COLLECTION -->
+        <!-- Gourmet Sandwiches -->
+        <div class="menu-card-premium scroll-reveal" data-category="savory" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_savory.jpg" alt="Gourmet Sandwiches">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-eggless">Vegetarian</span>
+                <span class="badge-standard">House Bread</span>
+              </div>
+              <span class="menu-card-price">₹480</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Gourmet Sandwiches</h3>
+            <p class="menu-card-desc">Toasted house sourdough bread layered with fresh buffalo mozzarella, sliced organic heirloom tomatoes, basil pesto, and microgreens.</p>
+          </div>
+        </div>
+
+        <!-- Artisan Pasta -->
+        <div class="menu-card-premium scroll-reveal" data-category="savory" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_savory.jpg" alt="Artisan Pasta">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-signature">Chef Special</span>
+              </div>
+              <span class="menu-card-price">₹650</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Artisan Pasta</h3>
+            <p class="menu-card-desc">Handcrafted fresh fettuccine tossed in a rich emulsion of Pecorino Romano cheese, black pepper, and shaved winter black truffles.</p>
+          </div>
+        </div>
+
+        <!-- European-inspired Pizza -->
+        <div class="menu-card-premium scroll-reveal" data-category="savory" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_savory.jpg" alt="European-inspired Pizza">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-eggless">Vegetarian</span>
+              </div>
+              <span class="menu-card-price">₹580</span>
+            </div>
+            <h3 class="menu-card-title font-serif">European-inspired Pizza</h3>
+            <p class="menu-card-desc">Stone-baked thin crust pizza topped with cream cheese base, wild portobello mushrooms, drizzled with truffle oil and fresh arugula.</p>
+          </div>
+        </div>
+
+        <!-- Chef Specials -->
+        <div class="menu-card-premium scroll-reveal" data-category="savory" data-reveal="fade-up">
+          <div class="menu-card-img-box">
+            <img src="assets/experience_savory.jpg" alt="Chef Specials">
+          </div>
+          <div class="menu-card-info-box">
+            <div class="menu-card-header">
+              <div class="menu-card-badge-row">
+                <span class="badge-recommend">Signature Savory</span>
+              </div>
+              <span class="menu-card-price">₹720</span>
+            </div>
+            <h3 class="menu-card-title font-serif">Chef Specials</h3>
+            <p class="menu-card-desc">Slow pan-seared cottage cheese medallion glazed with herb butter, served with grilled asparagus, and velvet truffle potato puree.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Immersive Call to Action Banner -->
+    <section class="reserve-section-premium" id="homepage-cta">
+      <!-- Background Parallax Image -->
+      <div class="reserve-premium-bg cta-menu"></div>
+      <div class="reserve-premium-overlay"></div>
+      
+      <div class="container reserve-premium-content scroll-reveal" data-reveal="fade-up">
+        <span class="reserve-premium-subtitle">Join Us In Hyderabad</span>
+        <h2 class="reserve-premium-title font-serif">Experience the Art of Slow Dining</h2>
+        <p class="reserve-premium-desc">Join us in Hyderabad and let our culinary team create a memorable dining experience crafted around flavors, ambience, and moments.</p>
+        <div class="reserve-premium-ctas">
+          <a href="https://wa.me/919441424667?text=Hello%20Maison%20%C3%89lan%2C%20I%20would%20like%20to%20reserve%20a%20table.%20Please%20share%20the%20available%20timings." target="_blank" rel="noopener noreferrer" class="btn btn-gold">Reserve Your Table</a>
+          <a href="contact.html" class="btn btn-outline-white">Explore Location</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Luxury Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Footer Column 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <h2 class="footer-brand-title">Maison Élan</h2>
+        <p class="footer-brand-desc">An elegant European dining experience and slow-living salon in Jubilee Hills, Hyderabad.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram" data-tooltip="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" aria-label="Pinterest" data-tooltip="Pinterest">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22a8.7 8.7 0 0 1-1.3-4.5c0-3.3 2.1-6.1 4.5-8.5C9.7 7.7 8 5.7 8 3.5a4.5 4.5 0 0 1 9 0c0 3.3-2.1 6.1-4.5 8.5 1.5 1.3 3.2 3.3 3.2 5.5a8.7 8.7 0 0 1-7.7 4.5z"></path></svg>
+          </a>
+          <a href="#" aria-label="Facebook" data-tooltip="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" aria-label="YouTube" data-tooltip="YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+          </a>
+          <a href="#" aria-label="X (formerly Twitter)" data-tooltip="X / Twitter">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z M4 20l6.768 -6.768 M20 4l-6.768 6.768"></path></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" aria-label="TripAdvisor" data-tooltip="TripAdvisor">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="14" r="3"></circle><circle cx="17" cy="14" r="3"></circle><path d="M12 12c-2.5 0-3 2.5-3 2.5h6s-.5-2.5-3-2.5z"></path><path d="M2.5 10c1 0 1.5 1.5 2 3h15c.5-1.5 1-3 2-3s1 5-2.5 5h-14C3.5 15 1.5 10 2.5 10z"></path><path d="M12 2C6.5 2 2.5 6.5 2.5 10h19c0-3.5-4-8-9-8z"></path></svg>
+          </a>
+          <a href="#" aria-label="Google Business Profile" data-tooltip="Google Reviews">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Column 2: Navigation Links -->
+      <div class="footer-col links-col">
+        <h3 class="footer-col-title">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="gallery.html">Atmosphere</a></li>
+          <li><a href="contact.html">Contact & Reserve</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3: The Club Membership -->
+      <div class="footer-col club-col">
+        <h3 class="footer-col-title">The Élan Club</h3>
+        <p class="footer-club-desc">Subscribe to receive invitation details for intimate acoustic tastings, seasonal menu previews, and high tea gatherings.</p>
+        <form class="footer-subscribe-form" id="subscribeForm">
+          <div class="subscribe-input-group">
+            <input type="email" class="form-control-subscribe" placeholder="Your Email Address" aria-label="Email address for subscription" required>
+            <button type="submit" class="btn-subscribe-submit" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+          <span class="subscribe-success-text" id="subscribeSuccess">Thank you for joining. Welcome to the Club.</span>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright and Legal -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">&copy; 2026 Maison Élan. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS file -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Reservations | Maison Élan | Elegant European Patisserie & Cafe | Hyderabad</title>
+  <meta name="description" content="Find opening hours, contact details, and locate Maison Élan in Jubilee Hills, Hyderabad. Reserve your table via our quick WhatsApp concierge service.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23C5A880%22 font-family=%22serif%22>M</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Luxury Splash Screen Loader -->
+  <div id="luxuryLoader" class="luxury-loader">
+    <div class="loader-content">
+      <span class="loader-monogram">MÉ</span>
+      <h1 class="loader-logo font-serif">Maison Élan</h1>
+      <div class="loader-ornament">
+        <div class="loader-ornament-lines">
+          <div class="loader-ornament-line long"></div>
+          <div class="loader-ornament-diamond"></div>
+          <div class="loader-ornament-line long"></div>
+        </div>
+        <div class="loader-line-wrapper">
+          <div class="loader-line"></div>
+        </div>
+      </div>
+      <p class="loader-tagline">An Elegant European Dining Experience</p>
+    </div>
+  </div>
+
+  <!-- Custom Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="header-container">
+      <!-- Monogram Logo -->
+      <a href="index.html" class="logo-container" aria-label="Maison Élan Home">
+        <span class="logo-monogram">MÉ</span>
+        <span class="logo-full">Maison Élan</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="story.html" class="nav-link">Our Story</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Reservation Action -->
+      <div class="header-actions">
+        <a href="https://wa.me/919441424667?text=Hello%20Maison%20%C3%89lan%2C%20I%20would%20like%20to%20reserve%20a%20table.%20Please%20share%20the%20available%20timings." target="_blank" rel="noopener noreferrer" class="btn btn-nav-reserve">Book Table</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="burger-line line-1"></span>
+          <span class="burger-line line-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-container">
+      <nav class="nav-mobile" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+          <li><a href="story.html" class="mobile-nav-link">Our Story</a></li>
+          <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav-footer">
+        <p class="mobile-hours">Daily 11:00 AM – 11:00 PM</p>
+        <p class="mobile-address">Road No. 45, Jubilee Hills, Hyderabad</p>
+        <a href="https://wa.me/919441424667?text=Hello%20Maison%20%C3%89lan%2C%20I%20would%20like%20to%20reserve%20a%20table.%20Please%20share%20the%20available%20timings." target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-mobile-reserve">Book Table</a>
+      </div>
+    </div>
+  </div>
+
+  <main style="padding-top: 90px;">
+    <!-- Bespoke Luxury Concierge Header (Distinct split design with live status board) -->
+    <section class="contact-banner-premium">
+      <!-- Background atmospheric real slideshow (slow fade) -->
+      <div class="contact-slideshow-container">
+        <div class="contact-slide-bg active" style="background-image: url('assets/hero_bg.jpg');"></div>
+        <div class="contact-slide-bg" style="background-image: url('assets/experience_beverages.jpg');"></div>
+        <div class="contact-slide-bg" style="background-image: url('assets/story_bg.jpg');"></div>
+        <div class="contact-banner-overlay"></div>
+      </div>
+      
+      <div class="container contact-split-grid">
+        <!-- Left Side: Editorial Typography & Real-time Concierge Board -->
+        <div class="contact-hero-info scroll-reveal" data-reveal="fade-right">
+          <span class="contact-hero-subtitle">CONCIERGE & DETAILS</span>
+          <h1 class="contact-hero-title font-serif">Connect With Maison Élan</h1>
+          <p class="contact-hero-desc">Our concierge team is at your service. Plan your visit to our Jubilee Hills salon or connect with us for bespoke bookings.</p>
+          
+          <!-- Interactive Concierge Status Board -->
+          <div class="concierge-status-board">
+            <div class="status-board-header">
+              <div class="status-dot-pulse" id="statusDot"></div>
+              <span class="status-text-label" id="statusLabel">Checking Salon Status...</span>
+            </div>
+            <div class="status-board-time">
+              <span class="time-label">Local Hyderabad Time</span>
+              <span class="time-value" id="statusTime">11:00 AM</span>
+            </div>
+            <div class="status-board-event" id="statusEvent">
+              Afternoon High Tea served daily from 3:30 PM to 6:00 PM
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Cinematic Arched Portrait Frame -->
+        <div class="contact-hero-visual scroll-reveal" data-reveal="fade-left" data-delay="150">
+          <div class="contact-arch-frame">
+            <img src="assets/experience_savory.jpg" alt="Maison Élan Slow Dining Ambience">
+            <div class="contact-frame-overlay"></div>
+            <div class="candle-glow-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details and Map split -->
+    <section class="location-section section-padding">
+      <div class="container grid-split">
+        <div class="location-details-side scroll-reveal" data-reveal="fade-right">
+          <span class="section-subtitle">VISIT US</span>
+          <h2 class="section-title">The Jubilee Hills Salon</h2>
+          <div class="editorial-divider"></div>
+          
+          <div class="location-info-block">
+            <h3 class="location-label">Address</h3>
+            <p class="location-text">Maison Élan, Road No. 45,<br>Jubilee Hills, Hyderabad, Telangana – 500033</p>
+          </div>
+
+          <div class="location-info-block">
+            <h3 class="location-label">Opening Hours</h3>
+            <p class="location-text">Open Daily: 11:00 AM – 11:00 PM</p>
+            <p class="location-subtext">Afternoon High Tea served daily from 3:30 PM to 6:00 PM</p>
+          </div>
+
+          <div class="location-info-block">
+            <h3 class="location-label">Contact Concierge</h3>
+            <p class="location-text">Tel: +91 40 2345 6789<br>Email: info@maisonelan.com</p>
+          </div>
+        </div>
+        
+        <div class="location-map-side scroll-reveal" data-reveal="fade-left">
+          <div class="map-card-wrapper">
+            <!-- Custom Styled Luxury Vector-Style Map Mockup (looks premium compared to default map colors) -->
+            <div class="styled-map-container">
+              <div class="map-grid-pattern"></div>
+              <div class="map-road road-horizontal"></div>
+              <div class="map-road road-vertical"></div>
+              <div class="map-road road-angled"></div>
+              <div class="map-marker-pin">
+                <div class="pin-pulse"></div>
+                <div class="pin-body">MÉ</div>
+              </div>
+              <div class="map-landmark park-landmark">KBR National Park</div>
+              <div class="map-landmark road-name">Road No. 45</div>
+              <div class="map-landmark metro-landmark">Jubilee Hills Checkpost</div>
+              <div class="map-label">MAISON ÉLAN</div>
+              <div class="map-controls">
+                <button class="map-control-btn" aria-label="Zoom in">+</button>
+                <button class="map-control-btn" aria-label="Zoom out">−</button>
+              </div>
+            </div>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-map-directions">
+              Get Directions via Google Maps 
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Booking Form Section -->
+    <section class="reserve-section section-padding bg-cream" style="border-top: 1px solid var(--color-beige); border-bottom: 1px solid var(--color-beige);">
+      <div class="container grid-split reverse-mobile">
+        <div class="reserve-form-side scroll-reveal" data-reveal="fade-right">
+          <span class="section-subtitle">TABLE BOOKINGS</span>
+          <h2 class="section-title">Reserve A Table</h2>
+          <p class="section-desc">Submit your reservation details below. To process your booking enquiry, you will be redirected to WhatsApp to send your request directly to our salon concierge.</p>
+          <div class="editorial-divider"></div>
+
+          <form class="reservation-form" id="waReservationForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resName">Full Name</label>
+                <input type="text" id="resName" class="form-control" placeholder="E.g., Devendra Rao" required>
+                <span class="error-msg" id="nameError">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label for="resPhone">Phone Number</label>
+                <input type="tel" id="resPhone" class="form-control" placeholder="E.g., +91 98765 43210" required>
+                <span class="error-msg" id="phoneError">Please enter a valid phone number</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resEmail">Email Address</label>
+                <input type="email" id="resEmail" class="form-control" placeholder="name@example.com" required>
+                <span class="error-msg" id="emailError">Please enter a valid email address</span>
+              </div>
+              <div class="form-group">
+                <label for="resGuests">Number of Guests</label>
+                <select id="resGuests" class="form-control" required>
+                  <option value="" disabled selected>Select guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="more">More than 6</option>
+                </select>
+                <span class="error-msg" id="guestsError">Please select number of guests</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resDate">Preferred Date</label>
+                <input type="date" id="resDate" class="form-control" required>
+                <span class="error-msg" id="dateError">Please choose a date</span>
+              </div>
+              <div class="form-group">
+                <label for="resTime">Preferred Time</label>
+                <select id="resTime" class="form-control" required>
+                  <option value="" disabled selected>Select time slot</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="15:30">3:30 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="21:30">9:30 PM</option>
+                </select>
+                <span class="error-msg" id="timeError">Please choose a time slot</span>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="resNotes">Special Notes or Occasion</label>
+              <textarea id="resNotes" class="form-control" rows="3" placeholder="Anniversary celebration, dietary allergies, quiet corner table requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-full-width">Book Table via WhatsApp</button>
+          </form>
+        </div>
+
+        <div class="reserve-info-side scroll-reveal" data-reveal="fade-left">
+          <div class="info-card" style="background-color: var(--color-ivory);">
+            <h3 class="info-card-title">General Policies</h3>
+            <ul class="info-list">
+              <li>
+                <strong>Grace Period:</strong> 
+                Tables are held for 15 minutes past the reserved booking time before release.
+              </li>
+              <li>
+                <strong>Group Bookings:</strong> 
+                For events or parties of more than 6 guests, please contact our events team at least 48 hours in advance.
+              </li>
+              <li>
+                <strong>Dress Code:</strong> 
+                Smart casual / elegant dress is recommended to preserve our dining atmosphere.
+              </li>
+            </ul>
+            
+            <div class="info-card-divider"></div>
+            
+            <div class="direct-contact-info">
+              <h4 class="direct-contact-title">Direct Enquiries</h4>
+              <p>For custom catering or private dining room bookings:</p>
+              <a href="tel:+914023456789" class="direct-phone">+91 40 2345 6789</a>
+              <a href="mailto:concierge@maisonelan.com" class="direct-email">concierge@maisonelan.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Luxury Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Footer Column 1: Brand Info -->
+      <div class="footer-col brand-col">
+        <h2 class="footer-brand-title">Maison Élan</h2>
+        <p class="footer-brand-desc">An elegant European dining experience and slow-living salon in Jubilee Hills, Hyderabad.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram" data-tooltip="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" aria-label="Pinterest" data-tooltip="Pinterest">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22a8.7 8.7 0 0 1-1.3-4.5c0-3.3 2.1-6.1 4.5-8.5C9.7 7.7 8 5.7 8 3.5a4.5 4.5 0 0 1 9 0c0 3.3-2.1 6.1-4.5 8.5 1.5 1.3 3.2 3.3 3.2 5.5a8.7 8.7 0 0 1-7.7 4.5z"></path></svg>
+          </a>
+          <a href="#" aria-label="Facebook" data-tooltip="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" aria-label="YouTube" data-tooltip="YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+          </a>
+          <a href="#" aria-label="X (formerly Twitter)" data-tooltip="X / Twitter">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z M4 20l6.768 -6.768 M20 4l-6.768 6.768"></path></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="#" aria-label="TripAdvisor" data-tooltip="TripAdvisor">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="14" r="3"></circle><circle cx="17" cy="14" r="3"></circle><path d="M12 12c-2.5 0-3 2.5-3 2.5h6s-.5-2.5-3-2.5z"></path><path d="M2.5 10c1 0 1.5 1.5 2 3h15c.5-1.5 1-3 2-3s1 5-2.5 5h-14C3.5 15 1.5 10 2.5 10z"></path><path d="M12 2C6.5 2 2.5 6.5 2.5 10h19c0-3.5-4-8-9-8z"></path></svg>
+          </a>
+          <a href="#" aria-label="Google Business Profile" data-tooltip="Google Reviews">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Column 2: Navigation Links -->
+      <div class="footer-col links-col">
+        <h3 class="footer-col-title">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="gallery.html">Atmosphere</a></li>
+          <li><a href="contact.html">Contact & Reserve</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3: The Club Membership -->
+      <div class="footer-col club-col">
+        <h3 class="footer-col-title">The Élan Club</h3>
+        <p class="footer-club-desc">Subscribe to receive invitation details for intimate acoustic tastings, seasonal menu previews, and high tea gatherings.</p>
+        <form class="footer-subscribe-form" id="subscribeForm">
+          <div class="subscribe-input-group">
+            <input type="email" class="form-control-subscribe" placeholder="Your Email Address" aria-label="Email address for subscription" required>
+            <button type="submit" class="btn-subscribe-submit" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+          <span class="subscribe-success-text" id="subscribeSuccess">Thank you for joining. Welcome to the Club.</span>
+        </form>
+      </div>
+    </div>
+
+    <!-- Copyright and Legal -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">&copy; 2026 Maison Élan. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reservation Confirmation / WhatsApp Flow Modal -->
+  <div class="success-modal-overlay" id="waConfirmationModal" role="dialog" aria-modal="true">
+    <div class="success-modal-box">
+      <!-- Step 1: Awaiting Send Confirmation -->
+      <div id="confirmStepAwaiting">
+        <div class="success-icon-box" style="animation: pulse-ring 2s infinite ease-out;">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="#C5A880" stroke-width="1.5" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </div>
+        <h3 class="success-modal-title">Sending via WhatsApp</h3>
+        <p class="success-modal-desc">
+          We have opened WhatsApp on your device with your pre-filled reservation details.
+        </p>
+        <p class="success-modal-note" style="margin-bottom: 25px;">
+          Please press <strong>Send</strong> on the WhatsApp application, then return here to complete your request.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <button class="btn btn-gold" id="btnConfirmSent">I Have Sent the Message</button>
+          <button class="btn btn-outline-brown" id="btnCancelBooking">Cancel & Edit Info</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Final Success State -->
+      <div id="confirmStepSuccess" style="display: none;">
+        <div class="success-icon-box">
+          <svg viewBox="0 0 24 24" width="40" height="40" stroke="#C5A880" stroke-width="1.5" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <h3 class="success-modal-title">Reservation Request Sent Successfully</h3>
+        <div class="reservation-summary-box" style="text-align: left; background-color: var(--color-cream); border: 1px solid var(--color-beige); padding: 25px; margin-bottom: 25px;">
+          <h4 class="font-serif" style="font-size: 1.25rem; border-bottom: 1px solid var(--color-beige); padding-bottom: 8px; margin-bottom: 15px; color: var(--color-espresso); letter-spacing: 0.05em;">Reservation Summary</h4>
+          <p style="font-size: 0.95rem; margin-bottom: 8px; color: var(--color-espresso);"><strong>Guest Name:</strong> <span id="summaryName" style="font-weight: 400;">-</span></p>
+          <p style="font-size: 0.95rem; margin-bottom: 8px; color: var(--color-espresso);"><strong>Date:</strong> <span id="summaryDate" style="font-weight: 400;">-</span></p>
+          <p style="font-size: 0.95rem; margin-bottom: 8px; color: var(--color-espresso);"><strong>Time:</strong> <span id="summaryTime" style="font-weight: 400;">-</span></p>
+          <p style="font-size: 0.95rem; margin-bottom: 8px; color: var(--color-espresso);"><strong>Number of Guests:</strong> <span id="summaryGuests" style="font-weight: 400;">-</span></p>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--color-espresso);"><strong>Special Requests:</strong> <span id="summaryNotes" style="font-weight: 400;">-</span></p>
+        </div>
+        <p class="success-modal-note" style="margin-bottom: 25px;">
+          Our team will confirm your table availability shortly through WhatsApp.
+        </p>
+        <button class="btn btn-gold" id="btnCloseConfirmModal">Return to Salon</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JS file -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
